@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Page</title>
+</head>
+<body>
+    <style>
+      body{
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header{
+        text-align: center;
+        padding: 20px;
+      }
+      .container{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: papayawhip;
+      }
+   
+      .section{
+  width: 33.33%;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  position: relative;
+      }
+      p{
+        margin-top: 50px;
+      }
+      .button{
+        background-color: blue;
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  border: 1px solid black;
+  text-decoration: aliceblue; 
+      }
+      @media screen and (max-width: 991px) and (min-width: 768px) {
+    .section {
+      width: 100%;
+      float: none;
+    }
+    .section:last-child {
+      clear: both;
+    }
+    .section:nth-child(2) {
+    float: left;
+    width: 50%;
+    }
+    .section:nth-child(1) {
+    float: right;
+    width: 50%;
+    }
+
+  }
+  @media (max-width: 767px) {
+  .section
+  }
+  @media (min-width: 992px) {
+  .section {
+    width: 33.33%;
+    float: left;
+  }
+}
+@media (max-width: 767px) {
+  .section {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
+
+
+   </style>
+   <header>
+   <h1> Coursera first Responsive Project</h1>
+   </header>
+   <div class="container">
+   <div class="section 1">
+    <div class="button">Cat</div>
+    <p>Mittens the cat went on an adventure to find a magical land filled with sunshine and mice, facing challenges along the way. She finally found the land and lived a happy life there for many years, making it her true home.</p>
+   </div>
+   <div class="section 2">
+    <div class="button">Dog</div>
+    <p>Max, a loyal dog, stayed by his sick owner's side and set out to find help. He encountered obstacles but persevered and found a medicine woman who saved his owner. Max was known as the bravest and most loyal dog in the village after his owner's recovery. </p>
+   </div>
+   <div class="section 3">
+    <div class="button">Sheep</div>
+    <p>Woolly the sheep went on an adventure to explore beyond his farm and encountered new sights. He eventually found a magical meadow with delicious grass and lived a happy life there for many years.</p>
+   </div>
+   </div>
+   </body>
